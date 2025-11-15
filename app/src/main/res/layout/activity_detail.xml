@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/full_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="6dp"
+            android:textColor="?attr/colorOnSurface"  android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+
+        <TextView
+            android:id="@+id/owner"
+            android:textSize="14sp"
+            android:paddingBottom="12dp"
+            android:textColor="?attr/colorOnSurfaceVariant" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:textSize="15sp"
+            android:paddingBottom="16dp"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="3dp"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView android:text="Stars:"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView android:id="@+id/stars"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+                <TextView android:text="Forks:"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView android:id="@+id/forks"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+                <TextView android:text="Open Issues:"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView android:id="@+id/issues"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+                <TextView android:text="Language:"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView android:id="@+id/language"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+                <TextView android:text="Updated:"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView android:id="@+id/updated"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/open_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open on GitHub"
+           />
+
+    </LinearLayout>
+
+</ScrollView>
